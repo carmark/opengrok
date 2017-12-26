@@ -8,7 +8,7 @@ RUN mkdir /src && \
   ln -s /src /var/opengrok/src && \
   wget "https://github.com/oracle/opengrok/releases/download/1.0/opengrok-1.0.tar.gz" -O /tmp/opengrok-1.0.tar.gz && \
   wget "http://ftp.us.debian.org/debian/pool/main/e/exuberant-ctags/exuberant-ctags_5.9~svn20110310-8_amd64.deb" -O /tmp/exuberant-ctags_5.9-svn20110310-8_amd64.deb && \
-  tar zxvf /tmp/opengrok-0.12.1.5.tar.gz -C / && \
+  tar zxvf /tmp/opengrok-1.0.tar.gz -C / && \
   dpkg -i /tmp/exuberant-ctags_5.9-svn20110310-8_amd64.deb && \
   rm -fr /tmp/* 
 
